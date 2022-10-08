@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/497c6f7318.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu" />
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,9 +25,24 @@
         </nav>
     </header>
     <main>
-
+        <div class="welcome">
+            <h1>Hi, I'm Marte<br> and this is my<br><span>Portfolio</span></h1>
+        </div>
+        <section class="card">
+                <div>
+                    <img src="images/project-exam-screen.jpg" alt="Project exam web site screen shot" />
+                </div>
+                <div>
+                    <h2>Explore Stjørdal</h2>
+                    <p>A hiking blog</p>
+                </div>
+            </div>
     </main>
     <footer>
+        <ul>
+            <li><a href="https://www.instagram.com/" class="fab fa-instagram"></a></li>
+            <li><a href="https://www.facebook.com/" class="fab fa-facebook"></a></li>
+        </ul>
     </footer>
 </body>
 </html>

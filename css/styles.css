@@ -1,0 +1,81 @@
+body,
+header a {
+  font-family: "DM Sans", Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f5f0ff;
+  text-decoration: none;
+  color: black;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif, Verdana, Geneva, Tahoma;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  display: none;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: flex;
+}
+
+.fa-bars {
+  font-size: 2em;
+  padding: 10px;
+}
+
+nav ul {
+  display: inline-flex;
+}
+
+nav li {
+  padding-left: 10px;
+  font-size: 1.4em;
+}
+
+/* Home page */
+
+span {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.welcome {
+  text-align: center;
+}
+
+.card {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  background-color: #8b3bdb;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.card img {
+  max-width: 500px;
+}
+
+@media (min-width: 900px) {
+  /* Home page */
+
+  header label {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    position: static;
+  }
+}
