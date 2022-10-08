@@ -1,7 +1,7 @@
 body,
 header a {
   font-family: "DM Sans", Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #f5f0ff;
+  background-color: #f0d8d8;
   text-decoration: none;
   color: black;
 }
@@ -53,14 +53,20 @@ span {
 }
 
 .card {
+  box-shadow: 0 5px 10px 1px #a7a7a7;
   max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  background-color: #8b3bdb;
-  border-radius: 20px;
-  color: #fff;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 25px black;
+  text-align: center;
+}
+
+.card-text {
 }
 
 .card img {
