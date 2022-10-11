@@ -49,7 +49,7 @@ nav li {
 .cta {
   text-decoration: none;
   display: inline-flex;
-  padding: 12px 17px 12px 17px;
+  padding: 10px 15px 10px 15px;
   margin-bottom: 15px;
   color: #fff;
   transition-duration: 0.4s;
@@ -61,7 +61,7 @@ nav li {
 }
 
 .cta-visit:hover {
-  background-color: #6d13c7;
+  background-color: #7008b6;
 }
 
 .cta-github {
@@ -70,8 +70,7 @@ nav li {
 }
 
 .cta-github:hover {
-  background-color: white;
-  color: #000;
+  background-color: rgb(54, 54, 54);
 }
 
 li a:hover {
@@ -81,7 +80,7 @@ li a:hover {
 /* Home page */
 
 span {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 700;
 }
 
@@ -93,13 +92,14 @@ span {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  max-width: 1300px;
+  gap: 20px;
+  max-width: 850px;
   margin: auto;
 }
 
 .card {
   box-shadow: 0 3px 7px 1px #cccccc;
-  max-width: 400px;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,14 +112,16 @@ span {
 }
 
 .card-text {
-  padding: 20px;
-  height: 180px;
-  display: flex;
-  flex-direction: column;
-  line-height: 90%;
+  height: 80px;
+  line-height: 80%;
+}
+
+.cta-container {
+  margin-bottom: 20px;
 }
 
 .card-text h2 {
+  font-size: 1.2em;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -134,8 +136,14 @@ span {
 
 .card img {
   width: 100%;
-  height: 200px;
+  height: 150px;
   object-fit: cover;
+}
+
+@media (min-width: 1250px) {
+  .card-container {
+    max-width: 1300px;
+  }
 }
 
 @media (min-width: 900px) {
@@ -148,5 +156,28 @@ span {
   nav {
     display: flex;
     position: static;
+  }
+}
+
+@media (min-width: 600px) {
+  span {
+    font-size: 3em;
+  }
+  .card {
+    max-width: 400px;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  .card-text {
+    height: 110px;
+  }
+  .card-text h2 {
+    font-size: 1.5em;
+  }
+  .cta {
+    padding: 12px 17px 12px 17px;
   }
 }
