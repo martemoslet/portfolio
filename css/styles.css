@@ -36,11 +36,10 @@ nav {
 }
 
 nav ul {
-  display: inline-flex;
+  display: flex;
 }
 
 nav li {
-  padding-left: 10px;
   font-size: 1.2em;
 }
 
@@ -197,7 +196,7 @@ span {
 
   nav {
     display: flex;
-    position: static;
+    position: relative;
   }
 }
 
