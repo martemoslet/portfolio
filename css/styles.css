@@ -157,11 +157,12 @@ span {
   text-decoration: none;
 }
 
-/* About */
+/* About / Contact */
 
 .about-text {
   max-width: 400px;
   margin: auto;
+  padding: 20px;
 }
 
 .about-text h1 {
@@ -169,7 +170,19 @@ span {
   font-size: 4em;
 }
 
-@media (min-width: 1250px) {
+.about-text h2 {
+  line-height: 10%;
+}
+
+.socials-contact {
+  padding-top: 0;
+}
+
+.socials-contact a {
+  padding: 0 15px 0 15px;
+}
+
+@media (min-width: 1260px) {
   .card-container {
     max-width: 1300px;
   }
